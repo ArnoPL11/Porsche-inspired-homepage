@@ -19,8 +19,7 @@ body {
   align-items: center;
   padding: 0.5rem 2rem;
   background-color: rgba(20,20,20,0.9);
-  position: sticky;
-  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 1000;
 }
 
@@ -229,3 +228,53 @@ footer {
 
 }
 
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* stack logo and nav links */
+    align-items: flex-start; 
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* stack links vertically */
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
