@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: rgba(20,20,20,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;          
+  align-items: center;    
+  gap: 10px;              
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #ccc; 
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Splash Section */
+.splash {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.splash-text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+}
+
+.splash-text h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.splash-text p {
+  font-size: 1.5rem;
+  color: #c4c4c4;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #141414;
+}
+
+.mission-section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Products Section */
+.products-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #141414;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team-member h3 {
+  margin: 0.5rem 0 0.3rem;
+  color: #fff;
+}
+
+.team-member:hover {
+  transform: scale(1.035);
+}
+
+
+/* Footer */
+footer {
+  background-color: #0a0a0a;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.social-links img:hover {
+  filter: brightness(100%) drop-shadow(0 0 6px #ccc);
+  transform: scale(1.1);
+}
+
+/* Responsive Flexbox Adjustments */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .product-list, .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+}
+
